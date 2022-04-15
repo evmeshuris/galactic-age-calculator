@@ -28,3 +28,9 @@ test("should return years left on Mars if age is more than life_exp", () => {
   let age_left = CalcAgeLeft("Mars", human);
   expect(age_left).toEqual(9.4);
 });
+
+test('should return 0 life_exp', () => {
+  const human = new Human(60, 60);
+  let age_left = CalcAgeLeft("Mars", human);
+  expect(age_left).toEqual(0);
+});
