@@ -2,12 +2,30 @@ export class Human {
   constructor(age, life_exp) {
     this.age = age;
     this.life_exp = life_exp;
+    // this.activityLevel = this.activityLevel;
+    // this.location = this.location;
   }
 
-  GetLifeExp() {
-    //logic for attributes
-    return this.life_exp;
-  }
+  // GetLifeExp(location) {
+  //   let lifeExp = this.CalcAgeLeft()
+  //   let average = 80;
+  //   switch (location) {
+  //     case "Sea":
+  //     case "Forest":
+  //       average = average * 1.1;
+  //       break;
+  //     case "City":
+  //       average = average * 0.9;
+  //       break;
+  //     default:
+  //       average = 80;
+  //     break;  
+  //   }
+  //   const getLifeExp = Number(
+  //     (Math.abs(lifeExp) * average).toFixed(2)
+  //   );
+  //   return getLifeExp;
+  // }
 
   CalcAgeLeft(planet) {
     let modifier = 1;
@@ -30,11 +48,11 @@ export class Human {
         break;
     }
     const age_left = Number(
-      (Math.abs(this.GetLifeExp() - this.age) * modifier).toFixed(2)
+      (Math.abs(this.life_exp - this.age) * modifier).toFixed(2)
     );
     console.log(this);
     console.log("humans age_left: " + age_left);
-    console.log("humans life_exp: " + this.GetLifeExp());
+    // console.log("humans life_exp: " + this.GetLifeExp());
 
     return age_left;
   }
