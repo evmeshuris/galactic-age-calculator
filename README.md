@@ -25,7 +25,7 @@ This application determines a user's age based on a planet's solar years. It ret
 * Clone the copied repository to your computer
 * Open the cloned directory named "galactic-age"
 * Open __test__/test.js file
-* Run npm run test in Terminal 
+* Run npm install; npm run start; npm run test in Terminal to see tests 
 
 ## Known Bugs
 
